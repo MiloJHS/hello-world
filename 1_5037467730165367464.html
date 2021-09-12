@@ -1,0 +1,23 @@
+<html>
+   <script>
+      function calc(form) {
+	 
+	 var A = document.getElementById("num1").value;
+
+	 var b = parseInt(A)*2;
+	
+	 document.getElementById("result").innerHTML = b;
+      }
+   </script>
+   <body>
+
+      <input type="number" id="num1" name="num1" />
+      <br />
+      <input type="button" value="Solve" onClick="calc(this)">
+
+      <p id="result" name="r1">
+      <br />
+      </p>
+
+   </body>
+</html>
