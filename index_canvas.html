@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Gamedev Canvas Workshop</title>
+    <style>
+    	* { padding: 0; margin: 0; }
+    	canvas { background: #eee; display: block; margin: 0 auto; }
+    </style>
+</head>
+<body>
+
+<canvas id="myCanvas" width="480" height="320"></canvas>
+
+<script>
+	var canvas = document.getElementById("myCanvas");
+	var ctx = canvas.getContext("2d");
+	//SOL
+	ctx.beginPath();
+	ctx.arc(20, 30, 20, 0, Math.PI*2, false);
+	ctx.fillStyle = "yellow";
+	ctx.fill();
+	ctx.closePath();
+	//NUBES1
+	ctx.beginPath();
+	ctx.arc(150, 30, 20, 0, Math.PI*2, false);
+	ctx.fillStyle = "#92C5FC";
+	ctx.fill();
+	ctx.closePath();
+	ctx.beginPath();
+	ctx.arc(175, 30, 20, 0, Math.PI*2, false);
+	ctx.fillStyle = "#92C5FC";
+	ctx.fill();
+	ctx.closePath();
+	ctx.beginPath();
+	ctx.arc(200, 30, 20, 0, Math.PI*2, false);
+	ctx.fillStyle = "#92C5FC";
+	ctx.fill();
+	ctx.closePath();
+	//NUBES2
+	ctx.beginPath();
+	ctx.arc(325, 30, 20, 0, Math.PI*2, false);
+	ctx.fillStyle = "#92C5FC";
+	ctx.fill();
+	ctx.closePath();
+	ctx.beginPath();
+	ctx.arc(275, 30, 20, 0, Math.PI*2, false);
+	ctx.fillStyle = "#92C5FC";
+	ctx.fill();
+	ctx.closePath();
+	ctx.beginPath();
+	ctx.arc(300, 30, 20, 0, Math.PI*2, false);
+	ctx.fillStyle = "#92C5FC";
+	ctx.fill();
+	ctx.closePath();
+	//FRENTE DE LA CASA
+	ctx.beginPath();
+	ctx.rect(240, 160, 150, 150);
+	ctx.fillStyle = "#FF0000";
+	ctx.fill();
+	ctx.closePath();
+	//PUERTA
+	ctx.beginPath();
+	ctx.rect(330, 220, 50, 90);
+	ctx.fillStyle = "#000000";
+	ctx.fill();
+	ctx.closePath();
+	//POMO DE LA PUERTA
+	ctx.beginPath();
+	ctx.arc(370, 270, 3, 0, Math.PI*2, false);
+	ctx.fillStyle = "#f4f4f4";
+	ctx.fill();
+	ctx.closePath();
+	//VENTANA
+	ctx.beginPath();
+	ctx.rect(240, 180, 50, 50);
+	ctx.fillStyle = "#c0c0c0";
+	ctx.fill();
+	ctx.closePath();
+	//VENTANA BARROTES HORIZONTAL
+	ctx.beginPath();
+	ctx.rect(240, 203, 50, 4);
+	ctx.fillStyle = "#808080";
+	ctx.fill();
+	ctx.closePath();
+	//VENTANA BARROTES VERTICAL
+	ctx.beginPath();
+	ctx.rect(263, 180, 4, 50);
+	ctx.fillStyle = "#808080";
+	ctx.fill();
+	ctx.closePath();
+	//TECHO
+	ctx.beginPath();
+	ctx.rect(215, 152, 200, 8);
+	ctx.fillStyle = "#808080";
+	ctx.fill();
+	ctx.closePath();
+	//TALLO
+	ctx.beginPath();
+	ctx.rect(100, 260, 4, 45);
+	ctx.fillStyle = "#00ff00";
+	ctx.fill();
+	ctx.closePath();
+	//FLOR CENTRO
+	ctx.beginPath();
+	ctx.arc(100, 257, 4, 0, Math.PI*2, false);
+	ctx.fillStyle = "yellow";
+	ctx.fill();
+	ctx.closePath();
+	//PETALO ARRIBA
+	ctx.beginPath();
+	ctx.arc(100, 249, 5, 0, Math.PI*2, false);
+	ctx.fillStyle = "red";
+	ctx.fill();
+	ctx.closePath();
+	//PETALO IZQUIERDA
+	ctx.beginPath();
+	ctx.arc(93, 257, 5, 0, Math.PI*2, false);
+	ctx.fillStyle = "red";
+	ctx.fill();
+	ctx.closePath();
+	//PETALO DERECHA
+	ctx.beginPath();
+	ctx.arc(108, 257, 5, 0, Math.PI*2, false);
+	ctx.fillStyle = "red";
+	ctx.fill();
+	ctx.closePath();
+	//PETALO ABAJO
+	ctx.beginPath();
+	ctx.arc(101, 265, 5, 0, Math.PI*2, false);
+	ctx.fillStyle = "red";
+	ctx.fill();
+	ctx.closePath();
+</script>
+
+</body>
+</html>
